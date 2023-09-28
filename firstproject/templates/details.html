@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ user.first_name }} {{ user.last_name }}</title>
+</head>
+<body>
+
+<h1>{{ user.first_name }} {{ user.last_name }}</h1>
+  
+<p>Email: {{ user.email }}</p>
+<p>Phone: {{ user.phone }}</p>
+<p>Member since: {{ user.joined_date }}</p>
+
+<hr>
+<p>Back to <a href="{% url 'user_profile' %}">Users</a></p>
+</body>
+</html>

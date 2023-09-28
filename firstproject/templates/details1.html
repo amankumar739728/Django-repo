@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ user.first_name }} {{ user.last_name }}
+{% endblock %}
+
+
+{% block content %}
+  <h1>{{ user.first_name }} {{ user.last_name }}</h1>
+  <p>Email {{ user.email }}</p>
+  <p>Phone {{ user.phone }}</p>
+  <p>Member since: {{ user.joined_date }}</p>
+  
+  <p>Back to <a href="{% url 'user_profile' %}">Users</a></p>
+  
+{% endblock %}

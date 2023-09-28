@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+
+    <p><a href="/">HOME</a></p>
+        <ul>
+            {% for x in users %}
+              <li><a href="details/{{ x.id }}">{{ x.first_name }} {{ x.last_name }}</a></li>
+            {% endfor %}
+          </ul>
+</body>
+</html>

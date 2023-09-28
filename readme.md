@@ -4,11 +4,22 @@
 2. View - A request handler that returns the relevant template and content - based on the request from the user.
 3. Template - A text file (like an HTML file) containing the layout of the web page, with logic on how to display the data.
 
-#### View
+#### Model (models.py)
 
 --->In Django, the data is delivered as an Object Relational Mapping (ORM), which is a technique designed to make it easier to work with databases.
 
 --->Django, with ORM, makes it easier to communicate with the database, without having to write complex SQL statements.
+
+
+
+# Working Steps for web App Created Using Django
+
+1. Django receives the URL, checks the urls.py file, and calls the view that matches the URL.
+2. The view, located in views.py, checks for relevant models.
+3. The models are imported from the models.py file.
+4. The view then sends the data to a specified template in the template folder.
+5. The template contains HTML and Django tags, and with the data it returns finished HTML content back to the browser.
+
 
 # Commands:
 
