@@ -47,17 +47,17 @@ C:\DJANGO\firstproject>python manage.py createsuperuser
 
 ## Run command(open git bash and type below command for project setup by moving to project directory):
 
-1.pip install django
-2.django-admin --version
-3.django-admin startproject projectname
-4.cd projectname
-5.python manage.py runserver
-6.python manage.py runserver 127.0.0.1:8000
+1. pip install django
+2. django-admin --version
+3. django-admin startproject projectname
+4. cd projectname
+5. python manage.py runserver
+6. python manage.py runserver 127.0.0.1:8000
 <!-- This will start a development server on your local machine. You can access your project at http://127.0.0.1:8000/ in your web browser. -->
 
 # project structure
 
-myproject/
+**myproject/
 ├── manage.py       #It's used for tasks like starting the development server, running database migrations, and more.
 └── myproject/      #inner directory of project with same name as project
     ├── __init__.py  #An empty file that tells Python that this directory should be considered a Python package
@@ -65,7 +65,7 @@ myproject/
     ├── settings.py  # This file contains the configuration settings for your Django project.
     ├── urls.py      # This file contains the URL patterns for your project. It maps URLs to views.
     ├── views.py     # Additional file we created for URL mapping(urls.py) with views.py
-    └── wsgi.py      #file responsible for integration between web and server.
+    └── wsgi.py **     #file responsible for integration between web and server.
 
 # for template rendering 
 1. go to this location --> C:\DJANGO\secondproject
@@ -84,7 +84,7 @@ myproject/
 # App structure in project 
 
 
-myapp/
+**myapp/
 ├── admin.py    #This is where you can register models to be managed via the Django admin interface.
 ├── apps.py     #This file defines configuration for the app. It's where you can customize how the app behaves.
 ├── __init__.py
@@ -93,7 +93,7 @@ myapp/
 ├── models.py   #This is where you define data models for your app.
 ├── tests.py    #This is where you can write unit tests for your app.
 └── views.py    # This is where you define view functions that handle HTTP requests and return responses.
-
+**
 # To create a new app, follow these steps:
         1. cd myproject
         2. python manage.py startapp myapp          #create a new app using this command
